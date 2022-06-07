@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AccountSearchDialog</class>
+ <widget class="QDialog" name="AccountSearchDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>817</width>
+    <height>433</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AccountSearchDialog</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>350</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkcheckBox">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>40</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="tabletTracking">
+    <bool>false</bool>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>查询支票账户</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="savecheckBox">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>40</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="tabletTracking">
+    <bool>false</bool>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>查询储蓄账户</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>350</y>
+     <width>300</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="CABlineEdit_2"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_14">
+      <property name="text">
+       <string>身份证号</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <widget class="QCheckBox" name="CABcheckBox_2">
+      <property name="tabletTracking">
+       <bool>false</bool>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>查询顾客所有账户 必须提供完整的身份证号</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>90</y>
+     <width>313</width>
+     <height>176</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>账户号</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QComboBox" name="checkidcomboBox">
+      <item>
+       <property name="text">
+        <string>不限</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>是</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>包含</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLineEdit" name="checkidlineEdit"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>余额</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QComboBox" name="checkbalancecomboBox">
+      <item>
+       <property name="text">
+        <string>不限</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>等于</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>大于</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>小于</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLineEdit" name="checkbalancelineEdit"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>开户日期</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1" colspan="2">
+     <widget class="QComboBox" name="checkopeningdatecomboBox">
+      <item>
+       <property name="text">
+        <string>不限</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>一年之内</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>两年之内</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>两年以上</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>最近访问日期日期</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1" colspan="2">
+     <widget class="QComboBox" name="checkrecentreachcomboBox">
+      <item>
+       <property name="text">
+        <string>不限</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>一个月之内</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>六个月之内</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>一年之内</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>一年以上</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>透支额度</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QComboBox" name="checkoverdraftcomboBox">
+      <item>
+       <property name="text">
+        <string>不限</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>等于</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>大于</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>小于</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QLineEdit" name="checkoverdraftlineEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>90</y>
+     <width>313</width>
+     <height>212</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>账户号</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QComboBox" name="saveidcomboBox">
+      <item>
+       <property name="text">
+        <string>不限</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>是</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>包含</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLineEdit" name="saveidlineEdit"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_8">
+      <property name="text">
+       <string>余额</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QComboBox" name="savebalancecomboBox">
+      <item>
+       <property name="text">
+        <string>不限</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>等于</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>大于</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>小于</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLineEdit" name="savebalancelineEdit"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_9">
+      <property name="text">
+       <string>开户日期</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1" colspan="2">
+     <widget class="QComboBox" name="saveopeningdatecomboBox">
+      <item>
+       <property name="text">
+        <string>不限</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>一年之内</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>两年之内</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>两年以上</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_10">
+      <property name="text">
+       <string>最近访问日期日期</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1" colspan="2">
+     <widget class="QComboBox" name="saverecentreachcomboBox">
+      <item>
+       <property name="text">
+        <string>不限</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>一个月之内</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>六个月之内</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>一年之内</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>一年以上</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_11">
+      <property name="text">
+       <string>利率</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QComboBox" name="saveratecomboBox">
+      <item>
+       <property name="text">
+        <string>不限</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>等于</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>大于</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>小于</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QLineEdit" name="saveratelineEdit"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label_12">
+      <property name="text">
+       <string>货币类型</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1" colspan="2">
+     <widget class="QComboBox" name="savecurrencycomboBox">
+      <item>
+       <property name="text">
+        <string>不限</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>RMB</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>dollar</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>others</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>290</y>
+     <width>300</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="CABlineEdit"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_13">
+      <property name="text">
+       <string>账户号</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <widget class="QCheckBox" name="CABcheckBox">
+      <property name="tabletTracking">
+       <bool>false</bool>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>查询账户所有人 必须提供完整的账户号</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>AccountSearchDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>AccountSearchDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

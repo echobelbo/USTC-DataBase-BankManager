@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ClientUpdateDialog</class>
+ <widget class="QDialog" name="ClientUpdateDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>735</width>
+    <height>445</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ClientUpdateDialog</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>400</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>50</y>
+     <width>314</width>
+     <height>312</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="3">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>           更新条件 &quot;含有&quot;和&quot;是&quot;的空白代表无限制</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>身份证号</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_13">
+        <property name="text">
+         <string>姓名</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_10">
+        <property name="text">
+         <string>地址</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_14">
+        <property name="text">
+         <string>联系方式</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>联系人姓名</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_12">
+        <property name="text">
+         <string>与联系人关系</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>联系人邮箱</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>联系人联系方式</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="1">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QComboBox" name="idcomboBox">
+        <item>
+         <property name="text">
+          <string>含有</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>是</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>为空</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="namecomboBox">
+        <item>
+         <property name="text">
+          <string>含有</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>是</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>为空</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="addresscomboBox">
+        <item>
+         <property name="text">
+          <string>含有</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>是</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>为空</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="telcomboBox">
+        <item>
+         <property name="text">
+          <string>含有</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>是</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>为空</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="relationcomboBox">
+        <item>
+         <property name="text">
+          <string>含有</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>是</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>为空</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="cnamecomboBox">
+        <item>
+         <property name="text">
+          <string>含有</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>是</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>为空</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="cemailcomboBox">
+        <item>
+         <property name="text">
+          <string>含有</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>是</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>为空</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="ctelcomboBox">
+        <item>
+         <property name="text">
+          <string>含有</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>是</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>为空</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="2">
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QLineEdit" name="idlineEdit"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="namelineEdit"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="addresslineEdit"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="tellineEdit"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="cnamelineEdit"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="relationlineEdit"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="cemaillineEdit"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="ctellineEdit"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>50</y>
+     <width>61</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>更改情况</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>80</y>
+     <width>311</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
+       <widget class="QCheckBox" name="idcheckBox">
+        <property name="text">
+         <string>身份证号</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="namecheckBox">
+        <property name="text">
+         <string>姓名</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="addresscheckBox">
+        <property name="text">
+         <string>地址</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="telcheckBox">
+        <property name="text">
+         <string>联系方式</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="cnamecheckBox">
+        <property name="text">
+         <string>联系人姓名</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="relationcheckBox">
+        <property name="text">
+         <string>与联系人关系</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="cemailcheckBox">
+        <property name="text">
+         <string>联系人邮箱</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="ctelcheckBox">
+        <property name="text">
+         <string>联系人联系方式</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QLineEdit" name="idlineEdit_2"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="namelineEdit_2"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="addresslineEdit_2"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="tellineEdit_2"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="cnamelineEdit_2"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="relationlineEdit_2"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="cemaillineEdit_2"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="ctellineEdit_2"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>ClientUpdateDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>ClientUpdateDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

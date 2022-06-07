@@ -1,0 +1,91 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'ClientAddDialog.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_ClientAddDialog(object):
+    def setupUi(self, ClientAddDialog):
+        ClientAddDialog.setObjectName("ClientAddDialog")
+        ClientAddDialog.resize(536, 318)
+        self.layoutWidget = QtWidgets.QWidget(ClientAddDialog)
+        self.layoutWidget.setGeometry(QtCore.QRect(10, 20, 511, 271))
+        self.layoutWidget.setObjectName("layoutWidget")
+        self.gridLayout = QtWidgets.QGridLayout(self.layoutWidget)
+        self.gridLayout.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout.setObjectName("gridLayout")
+        self.label = QtWidgets.QLabel(self.layoutWidget)
+        self.label.setObjectName("label")
+        self.gridLayout.addWidget(self.label, 0, 0, 1, 2)
+        self.label_13 = QtWidgets.QLabel(self.layoutWidget)
+        self.label_13.setObjectName("label_13")
+        self.gridLayout.addWidget(self.label_13, 1, 0, 1, 1)
+        self.namelineEdit = QtWidgets.QLineEdit(self.layoutWidget)
+        self.namelineEdit.setObjectName("namelineEdit")
+        self.gridLayout.addWidget(self.namelineEdit, 1, 1, 1, 2)
+        self.label_14 = QtWidgets.QLabel(self.layoutWidget)
+        self.label_14.setObjectName("label_14")
+        self.gridLayout.addWidget(self.label_14, 1, 4, 1, 1)
+        self.tellineEdit = QtWidgets.QLineEdit(self.layoutWidget)
+        self.tellineEdit.setObjectName("tellineEdit")
+        self.gridLayout.addWidget(self.tellineEdit, 1, 5, 1, 3)
+        self.label_10 = QtWidgets.QLabel(self.layoutWidget)
+        self.label_10.setObjectName("label_10")
+        self.gridLayout.addWidget(self.label_10, 2, 0, 1, 1)
+        self.label_8 = QtWidgets.QLabel(self.layoutWidget)
+        self.label_8.setObjectName("label_8")
+        self.gridLayout.addWidget(self.label_8, 3, 0, 1, 2)
+        self.cnamelineEdit = QtWidgets.QLineEdit(self.layoutWidget)
+        self.cnamelineEdit.setObjectName("cnamelineEdit")
+        self.gridLayout.addWidget(self.cnamelineEdit, 3, 2, 1, 2)
+        self.label_12 = QtWidgets.QLabel(self.layoutWidget)
+        self.label_12.setObjectName("label_12")
+        self.gridLayout.addWidget(self.label_12, 3, 4, 1, 2)
+        self.relationlineEdit = QtWidgets.QLineEdit(self.layoutWidget)
+        self.relationlineEdit.setObjectName("relationlineEdit")
+        self.gridLayout.addWidget(self.relationlineEdit, 3, 6, 1, 2)
+        self.label_9 = QtWidgets.QLabel(self.layoutWidget)
+        self.label_9.setObjectName("label_9")
+        self.gridLayout.addWidget(self.label_9, 4, 0, 1, 2)
+        self.cemaillineEdit = QtWidgets.QLineEdit(self.layoutWidget)
+        self.cemaillineEdit.setObjectName("cemaillineEdit")
+        self.gridLayout.addWidget(self.cemaillineEdit, 4, 2, 1, 2)
+        self.label_11 = QtWidgets.QLabel(self.layoutWidget)
+        self.label_11.setObjectName("label_11")
+        self.gridLayout.addWidget(self.label_11, 4, 4, 1, 3)
+        self.ctellineEdit = QtWidgets.QLineEdit(self.layoutWidget)
+        self.ctellineEdit.setObjectName("ctellineEdit")
+        self.gridLayout.addWidget(self.ctellineEdit, 4, 7, 1, 1)
+        self.buttonBox = QtWidgets.QDialogButtonBox(self.layoutWidget)
+        self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
+        self.buttonBox.setStandardButtons(QtWidgets.QDialogButtonBox.Cancel|QtWidgets.QDialogButtonBox.Ok)
+        self.buttonBox.setObjectName("buttonBox")
+        self.gridLayout.addWidget(self.buttonBox, 5, 7, 1, 1)
+        self.addresslineEdit = QtWidgets.QLineEdit(self.layoutWidget)
+        self.addresslineEdit.setObjectName("addresslineEdit")
+        self.gridLayout.addWidget(self.addresslineEdit, 2, 1, 1, 4)
+        self.idlineEdit = QtWidgets.QLineEdit(self.layoutWidget)
+        self.idlineEdit.setObjectName("idlineEdit")
+        self.gridLayout.addWidget(self.idlineEdit, 0, 2, 1, 3)
+
+        self.retranslateUi(ClientAddDialog)
+        self.buttonBox.accepted.connect(ClientAddDialog.accept)
+        self.buttonBox.rejected.connect(ClientAddDialog.reject)
+        QtCore.QMetaObject.connectSlotsByName(ClientAddDialog)
+
+    def retranslateUi(self, ClientAddDialog):
+        _translate = QtCore.QCoreApplication.translate
+        ClientAddDialog.setWindowTitle(_translate("ClientAddDialog", "ClientAddDialog"))
+        self.label.setText(_translate("ClientAddDialog", "身份证号"))
+        self.label_13.setText(_translate("ClientAddDialog", "姓名"))
+        self.label_14.setText(_translate("ClientAddDialog", "联系方式"))
+        self.label_10.setText(_translate("ClientAddDialog", "地址"))
+        self.label_8.setText(_translate("ClientAddDialog", "联系人姓名"))
+        self.label_12.setText(_translate("ClientAddDialog", "与联系人关系"))
+        self.label_9.setText(_translate("ClientAddDialog", "联系人邮箱"))
+        self.label_11.setText(_translate("ClientAddDialog", "联系人联系方式"))
+
